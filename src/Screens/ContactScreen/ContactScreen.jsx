@@ -2,47 +2,46 @@ import React, { useContext } from 'react'
 import ContactSidebear from '../../Components/ContactSidebear/ContactSidebear'
 import { useParams } from 'react-router'
 import { ContactsContext } from '../../Context/ContactsContext'
+import { IoSend } from "react-icons/io5";
+import "./ContactScreen.css"
 
 export default function ContactScreen() {
     const {contacts} = useContext(ContactsContext)
-    //Obtengo el id del contacto seleccionado a traves de los parametros de la url
     const {contact_id} = useParams()
-    //Busco el contacto seleccionado en la lista de contactos
     const contact_selected = contacts.find(contact => Number(contact.id) === Number(contact_id))
 
 return (
-    <div>
+    <div className='contact_container'>
     <ContactSidebear />
-      {/* Si el contacto seleccionado no existe, muestro un mensaje si no, muestro el contacto */}
     {
         ! contact_selected 
         ? <div>
             <h1>El contacto seleccionado no existe</h1>
         </div>
-        : <div>
+        : <div className='chats'>
         <h1>
-            El contacto seleccionado es: {contact_selected.name  }
+            {contact_selected.name  }
         </h1>
-        <div>
+        <div className="messages_container">
             {
             contact_selected.messages.map(message => {
                 return (
-                <div key={message.id}>
+                <div key={message.id}
+                className={message.send_by_me ? "message me" : "message other"}>
                     {
                     message.send_by_me
-                    ? <h3>Enviado mi</h3>
-                    : <h3>Enviado por: {contact_selected.name}</h3>
+                    ? <h3>Yo</h3>
+                    : <h3>{contact_selected.name}</h3>
                     }
                     <p>{message.text}</p>
                     <span>{message.time}</span>
-                    <hr />
                 </div>
                 )
             })}
         </div>
         <form>
             <textarea placeholder='Escribe un mensaje...' />
-            <button type='submit'>Enviar</button>
+            <button type='submit'><IoSend /></button>
         </form>
         </div>
     }

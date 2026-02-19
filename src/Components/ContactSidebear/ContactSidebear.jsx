@@ -9,11 +9,12 @@ export default function ContactSidebear() {
   return (
     <div className='start'>
         <SidebearLeft />
-        <div className='contacts'>
+        <div className='sidebear_container'>
         <div className='tittle'>
             <img src="/Crow.png" className='crow_image' />
             <h2>Crow Line</h2>
         </div>
+        <div className='contacts'>
         <div>
             {
                 contacts.map(
@@ -27,7 +28,8 @@ export default function ContactSidebear() {
                                     alt={contact.name} 
                                     style={
                                         {
-                                            width: '200px'
+                                            width: '100px',
+                                            height: "100px"
                                         }
                                     }
                                 />
@@ -39,7 +41,9 @@ export default function ContactSidebear() {
                     }
                 )
             }
+        </div>  
         </div>
+        
         </div>
     </div>
   )
