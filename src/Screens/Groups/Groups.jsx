@@ -1,6 +1,10 @@
 
 export default function Groups(){
     return(
-        <h1>Grupo</h1>
+        <div>
+            <h1>Grupo</h1>
+            <p>Crear una opcion para volver atras</p>
+        </div>
+        
     )
 }

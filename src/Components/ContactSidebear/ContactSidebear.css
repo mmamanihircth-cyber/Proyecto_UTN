@@ -32,3 +32,22 @@
 .sidebear_container{
     width: 70%;
 }
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.info_contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.info_contacts span{
+    font-style: italic;
+    color: black;
+    font-size: 13px;
+}
+a{
+    text-decoration: none;
+}

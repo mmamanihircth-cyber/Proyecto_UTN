@@ -2,8 +2,9 @@ import React, { useContext } from 'react'
 import ContactSidebear from '../../Components/ContactSidebear/ContactSidebear'
 import { useParams } from 'react-router'
 import { ContactsContext } from '../../Context/ContactsContext'
-import { IoSend } from "react-icons/io5";
 import "./ContactScreen.css"
+import Messages from '../../Components/Messages/Messages';
+import NewMessageForm from '../../Components/NewMessageForm/NewMessageForm';
 
 export default function ContactScreen() {
     const {contacts} = useContext(ContactsContext)
@@ -20,29 +21,10 @@ return (
         </div>
         : <div className='chats'>
         <h1>
-            {contact_selected.name  }
+            {contact_selected.name}
         </h1>
-        <div className="messages_container">
-            {
-            contact_selected.messages.map(message => {
-                return (
-                <div key={message.id}
-                className={message.send_by_me ? "message me" : "message other"}>
-                    {
-                    message.send_by_me
-                    ? <h3>Yo</h3>
-                    : <h3>{contact_selected.name}</h3>
-                    }
-                    <p>{message.text}</p>
-                    <span>{message.time}</span>
-                </div>
-                )
-            })}
-        </div>
-        <form>
-            <textarea placeholder='Escribe un mensaje...' />
-            <button type='submit'><IoSend /></button>
-        </form>
+        <Messages contact_selected={contact_selected} />
+        <NewMessageForm contact_id={contact_id} />
         </div>
     }
     </div>
