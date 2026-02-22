@@ -3,10 +3,56 @@
     height: 100vh;
     justify-content: space-between;
     flex-direction: row;
-    margin-top: 20px;
 }
 .chats{
     width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.chat_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+.chat_header_contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.chat_header_contact img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.chat_header_contact h1{
+    cursor: default; 
+}
+.chat_header_interaction{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.chat_header_interaction button{
+    background-color: transparent;
+    width: 5%;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 43px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+.chat_header_interaction button:hover{
+    background-color:#2D2E2E;
 }
 .start{
     width: 30%;
@@ -19,33 +65,13 @@
     border-radius: 15px;
     padding: 10px 15px;
 }
-.messages_container {
+.interaction_chat{
+    background-image: url("/fondochat.jpg");
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
-}
-.me{
-    align-self: flex-end;
-    margin: 10px 0px 10px 10px;
-    background-color: blue;
-}
-.other{
-    align-self: flex-start;
-    margin: 10px 10px 10px 0px;
-    background-color: green;
-}
-.texttarea{
-    width: 80%;
-}
-form{
-    display: flex;
-    align-items: center;
-}
-form textarea{
-    width: 95%;
-    background-color: white;
-}
-form button{
-    width: 5%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    flex: 1;
+    overflow-y: auto;
 }
 

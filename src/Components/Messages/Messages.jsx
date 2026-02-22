@@ -1,3 +1,5 @@
+import "./Messages.css"
+
 const Messages = ({contact_selected}) => {
     return (
         <div className="messages_container">

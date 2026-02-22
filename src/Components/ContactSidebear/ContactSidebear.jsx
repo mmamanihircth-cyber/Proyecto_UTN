@@ -14,7 +14,7 @@ return (
             <img src="/Crow.png" className='crow_image' />
             <h2>Crow Line</h2>
         </div>
-        <div className='contacts_container'>
+        <div className='contacts_sidebear_container'>
             {
                 contacts.map(
                     (contact) =>{
@@ -26,12 +26,6 @@ return (
                                     <img 
                                     src={contact.profile_picture} 
                                     alt={contact.name} 
-                                    style={
-                                        {
-                                            width: '100px',
-                                            height: "100px"
-                                        }
-                                    }
                                 />
                                 <div className='info_contacts'>
                                     <h3>{contact.name}</h3>
