@@ -6,11 +6,12 @@
 .hr{
     border: 1px solid grey;
 }
-.homescreen section{
+.section{
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60%;
 }
 .content_section{
     display: flex;
@@ -35,4 +36,21 @@
 .span_descarga_info{
     font-size: 15px;
     text-align: center;
+}
+.homescreen section button{
+    background-color: #002b2b;
+    width: 5%;
+    border-radius: 50px;
+    width: 100px;
+    height: 33px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+}
+.homescreen section button:hover{
+    background-color: #136363
 }

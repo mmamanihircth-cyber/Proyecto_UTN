@@ -7,7 +7,7 @@ export default function HomeScreen() {
     <div className='homescreen'>
         <ContactSidebear/>
         <hr className='hr'/>
-        <section>
+        <section className='section'>
           <div className='content_section'>
             <div><img src="/imagesection.png" className='crow_section' /></div>
             <span className='span_descarga'>Descarga Crow Line para Windows</span>

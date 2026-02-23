@@ -17,3 +17,28 @@ body{
     overflow: hidden;
 }
 
+@media(max-width:1000px){
+    .sidebearleft_container{
+    display: none;
+}
+    .start{
+        display: flex;
+        justify-content: flex-start;
+        padding: 0 30px;
+    }
+    .sidebear_container{
+        width: 100%;
+    }
+}
+@media (max-width: 900px){
+    .section{
+        display: none !important;
+    }
+    hr{
+        display: none;
+    }
+    .start{
+        width: 100vh;
+    }
+}
+

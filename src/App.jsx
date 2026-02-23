@@ -6,6 +6,7 @@ import ErrorNotFoundScreen from './Screens/ErrorNotFoundScreen/ErrorNotFoundScre
 import ContactsContextProvider from './Context/ContactsContext'
 import Groups from './Screens/Groups/Groups'
 import Settings from './Screens/Settings/Settings'
+import AddContact from './Screens/AddContact/AddContact'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                         path='*'
                         element={<ErrorNotFoundScreen />}
                     />
+                    <Route path='/addcontact' element={<AddContact/>}/>
                     <Route path='/groups' element={<Groups />}/>
                     <Route path='/settings' element={<Settings />}/>
                 </Routes>

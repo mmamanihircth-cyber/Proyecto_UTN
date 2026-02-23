@@ -8,7 +8,6 @@ export default function ContactSidebear() {
     const{contacts, favorite_name}=useContext(ContactsContext)
 return (
     <div className='start'>
-        {/* <SidebearLeft /> */}
         <div className='sidebear_container'>
         <div className='tittle'>
             <img src="/Crow.png" className='crow_image' />
@@ -39,8 +38,9 @@ return (
                 )
             }
         </div>
-        
         </div>
+        <div className='sidebearleft_container'><SidebearLeft /></div> 
     </div>
+    
 )
 }

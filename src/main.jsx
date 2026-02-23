@@ -3,7 +3,6 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router'
 import "./global/global.css"
 
-
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
         <App />

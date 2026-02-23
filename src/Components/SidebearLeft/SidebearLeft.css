@@ -1,0 +1,46 @@
+.bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 95%;
+    width: 40%;
+    align-self: center;
+    background-color: #1D1F1F;
+    border-radius: 100px;
+    padding: 15px 0;
+}
+.profile_picture{
+    width: 70px;
+    height: 50px
+}
+.interection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bar_header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    font-size: 13px;
+    gap: 12px;
+    height: 15%;
+    width: 100%;
+}
+.bar_header img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bar a{
+    color: white;
+    font-size: 22px;
+}
+.bar_header h3{
+    width: 100%;
+    text-align: center;
+    font-size: 100%;
+}

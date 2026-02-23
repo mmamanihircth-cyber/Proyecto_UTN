@@ -90,9 +90,9 @@ const contacts =[
     
     {
         id:5,
-        name:"Gyomei",
+        name:"Tokito",
         last_time_connection:"En línea",
-        profile_picture:"https://img.wattpad.com/a084730ac3fc79eb98b91931034ec30f30b92a71/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f35473963464d72513454473271773d3d2d3335382e313563346238353066643161343966393139363731313438333537312e6a7067?s=fit&w=720&h=720",
+        profile_picture:"https://www.geekmi.news/img/2021/08/08/tokito-1.jpg?__scale=w:1200,h:900,t:2",
         messages:[
             {
                 id:1,
