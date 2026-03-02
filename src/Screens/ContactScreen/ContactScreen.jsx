@@ -9,16 +9,19 @@ import { IoVideocamOutline } from "react-icons/io5";
 import { IoCallSharp } from "react-icons/io5";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { CiMenuKebab } from "react-icons/ci";
+import { IoMdArrowRoundBack } from "react-icons/io";
+
+import { useNavigate } from "react-router-dom";
 
 export default function ContactScreen() {
     const {contacts} = useContext(ContactsContext)
     const {contact_id} = useParams()
     const contact_selected = contacts.find(contact => Number(contact.id) === Number(contact_id))
+    const navigate = useNavigate()
 
 return (
+    
     <div className='contact_container'>
-    <ContactSidebear />
-    <hr className='hr'/>
     {
         ! contact_selected 
         ? <div>
@@ -27,6 +30,7 @@ return (
         : <div className='chats'>
             <div className='chat_header'>
                 <div className='chat_header_contact'>
+                    <button className="back_button" onClick={() => navigate("/")}><IoMdArrowRoundBack /></button>
                     <img src={contact_selected.profile_picture} alt={contact_selected.name} />
                     <h1>{contact_selected.name}</h1>
                 </div>
@@ -48,3 +52,10 @@ return (
     </div>
 )
 }
+/* 
+    import { IoVideocam } from "react-icons/io5";
+    <IoVideocam />
+
+    import { IoCallOutline } from "react-icons/io5";
+    <IoCallOutline />
+*/

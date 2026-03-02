@@ -1,11 +1,13 @@
-import React, { useContext } from 'react'
+import React, {useState, useContext } from 'react'
 import { ContactsContext } from '../../Context/ContactsContext'
-import { Link } from 'react-router'
+import { Link, useLocation } from 'react-router-dom'
 import "./ContactSidebear.css"
-import { SidebearLeft } from '../SidebearLeft/SidebearLeft';
+
 
 export default function ContactSidebear() {
-    const{contacts, favorite_name}=useContext(ContactsContext)
+    const{contacts}=useContext(ContactsContext)
+    const location=useLocation()
+
 return (
     <div className='start'>
         <div className='sidebear_container'>
@@ -13,6 +15,9 @@ return (
             <img src="/Crow.png" className='crow_image' />
             <h2>Crow Line</h2>
         </div>
+        {
+                (location.pathname === "/" ||
+                location.pathname.startsWith("/contact")) && (
         <div className='contacts_sidebear_container'>
             {
                 contacts.map(
@@ -28,7 +33,7 @@ return (
                                 />
                                 <div className='info_contacts'>
                                     <h3>{contact.name}</h3>
-                                    <span>{contact.last_time_connection}</span>
+                                    <span style={{color: contact.last_time_connection==="En línea" ? "skyblue" : "gray"}}>{contact.last_time_connection}</span>
                                 </div>
                                 </div>
                                 
@@ -38,8 +43,8 @@ return (
                 )
             }
         </div>
+        )}
         </div>
-        <div className='sidebearleft_container'><SidebearLeft /></div> 
     </div>
     
 )

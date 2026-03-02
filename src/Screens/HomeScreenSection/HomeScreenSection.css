@@ -1,0 +1,49 @@
+.content_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #161717;
+}
+.downland_crowline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 24px; 
+    height: 50%;
+    width: 35%;
+    background-color: #1D1F1F;
+}
+.crow_section{
+    width: 140px;
+    height: 110px;
+}
+.span_descarga{
+    font-size: 25px;
+    text-align: center;
+}
+.span_descarga_info{
+    font-size: 15px;
+    text-align: center;
+}
+.downland_crowline button{
+    background-color: #002b2b;
+    width: 5%;
+    border-radius: 50px;
+    width: 100px;
+    height: 33px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+.downland_crowline button:hover{
+    background-color: #136363
+}

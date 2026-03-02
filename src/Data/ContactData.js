@@ -22,50 +22,6 @@ const contacts =[
         ]
     },
     {
-        id:2,
-        name:"Zenitsu",
-        last_time_connection:"hace 1 hora",
-        profile_picture:"https://external-preview.redd.it/following-demon-slayer-infinity-castle-i-owe-zenitsu-an-v0-8ssWyEB3275um6mcFLnVn8QouZKM0hF3TebOe2h-PuA.jpeg?auto=webp&s=9833bc576cb0ae860f43749f7ee6b554865373b9",
-        messages:[
-            {
-                id:1,
-                text:"Hola, q onda?",
-                send_by_me:true,
-                created_at:"2024-06-01T12:00:00Z",
-                is_read : true,
-            },
-            {
-                id:2,
-                text:"Hola, todo bieeeeen",
-                send_by_me:false,
-                created_at:"2024-06-01T12:05:00Z",
-                is_read : false,
-            }
-        ]
-    },
-    {
-        id:3,
-        name:"Shinobu",
-        last_time_connection:"hace 30 minutos",
-        profile_picture:"https://i1.sndcdn.com/artworks-nPeNPezwXgNzQw5o-oupljQ-t500x500.jpg",
-        messages:[
-            {
-                id:1,
-                text:"Hola, q onda?",
-                send_by_me:true,
-                created_at:"2024-06-01T12:00:00Z",
-                is_read : true,
-            },
-            {
-                id:2,
-                text:"Hola, todo bieeeeen",
-                send_by_me:false,
-                created_at:"2024-06-01T12:05:00Z",
-                is_read : false,
-            }
-        ]
-    },
-    {
         id:4,
         name:"Gyomei",
         last_time_connection:"En línea",
@@ -87,7 +43,28 @@ const contacts =[
             }
         ]
     },
-    
+    {
+        id:2,
+        name:"Zenitsu",
+        last_time_connection:"hace 1 hora",
+        profile_picture:"https://external-preview.redd.it/following-demon-slayer-infinity-castle-i-owe-zenitsu-an-v0-8ssWyEB3275um6mcFLnVn8QouZKM0hF3TebOe2h-PuA.jpeg?auto=webp&s=9833bc576cb0ae860f43749f7ee6b554865373b9",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
     {
         id:5,
         name:"Tokito",
@@ -133,6 +110,28 @@ const contacts =[
         ]
     },
     {
+        id:3,
+        name:"Shinobu",
+        last_time_connection:"hace 30 minutos",
+        profile_picture:"https://i1.sndcdn.com/artworks-nPeNPezwXgNzQw5o-oupljQ-t500x500.jpg",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
+    {
         id:7,
         name:"Obanai",
         last_time_connection:"En línea",
@@ -159,6 +158,94 @@ const contacts =[
         name:"Obanai",
         last_time_connection:"En línea",
         profile_picture:"https://cdn.rafled.com/anime-icons/images/j6qwmLUYJCjc39luGdChGjryFasm4fmS.jpg",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
+    {
+        id:9,
+        name:"Inosuke",
+        last_time_connection:"hace 1 dia",
+        profile_picture:"https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2024/04/inosuke3.jpg?resize=1280%2C720&ssl=1",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
+    {
+        id:10,
+        name:"Kanao",
+        last_time_connection:"hace 2 dia",
+        profile_picture:"https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/05/kanao-tsuyuri-shinobu-tsuguko.jpg?w=1600&h=1600&fit=crop",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
+    {
+        id:11,
+        name:"Genya",
+        last_time_connection:"hace 2 dia",
+        profile_picture:"https://pbs.twimg.com/media/GYko00bW8AAGDoE.jpg",
+        messages:[
+            {
+                id:1,
+                text:"Hola, q onda?",
+                send_by_me:true,
+                created_at:"2024-06-01T12:00:00Z",
+                is_read : true,
+            },
+            {
+                id:2,
+                text:"Hola, todo bieeeeen",
+                send_by_me:false,
+                created_at:"2024-06-01T12:05:00Z",
+                is_read : false,
+            }
+        ]
+    },
+    {
+        id:12,
+        name:"Murata",
+        last_time_connection:"hace 3 dia",
+        profile_picture:"https://i.pinimg.com/736x/b2/5a/93/b25a9363191da411a9e1409d64596d5c.jpg",
         messages:[
             {
                 id:1,

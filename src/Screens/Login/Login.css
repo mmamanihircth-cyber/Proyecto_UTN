@@ -1,0 +1,46 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #161717; /* El color oscuro de WP */
+}
+.login-container img{
+    width: 300px;
+    height: 210px;
+}
+.bienvenida{
+    text-align: center;
+    font-size: 150%;
+}
+.login-form {
+    background-color: #1D1F1F;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    text-align: center;
+}
+.login-form input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #012f5a;
+    color: white;
+}
+.login-form button {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0084ff; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.login-form button:hover{
+    background-color: #61aff8;
+    color: #012f5a;
+}

@@ -1,0 +1,19 @@
+.container_option_settings{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+.option_settings{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}.info{
+    display:flex;
+    flex-direction: column;
+}
+.icons-settings{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
