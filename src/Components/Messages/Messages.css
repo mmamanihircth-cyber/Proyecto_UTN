@@ -1,29 +1,65 @@
 .messages_container {
     display: flex;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 10px 20px;
+    overflow-y: auto;
+    gap: 5px; 
+}
+.message_row {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+}
+.message_row.me {
+    justify-content: flex-end;
+}
+.message_row.other {
+    justify-content: flex-start;
+    align-items: flex-end; 
+    gap: 10px;
+}
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: default;
+    position: relative;
+}
+.message.me {
+    background-color: #0783FA; 
+    color: white;
+    max-width: 60%;
+    border-bottom-right-radius: 2px; 
+}
+.message.other {
+    background-color: #3d3d3d;
+    color: white;
+    max-width: 60%; 
+    border-bottom-left-radius: 2px;
+}
+.message_author_pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.message_author_name {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #34b7f1;
+    margin-bottom: 4px;
+}
+.message p {
+    margin: 0;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    overflow-y: auto;
-}
-.me{
-    align-self: flex-end;
-    margin: 10px 0px 10px 10px;
-    background-color: #0783FA;
-    cursor: default; 
-    max-width: 60%;
-}
-.me p{
-    max-width: 100%;
-    min-height: 0;
     word-break: break-word;
 }
-.other{
-    align-self: flex-start;
-    margin: 10px 10px 10px 0px;
-    background-color: #3d3d3d;
-    cursor: default; 
-    max-width: 100%;
-    min-height: 0;
-    word-break: break-word;
+.message span {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    text-align: right;
+    opacity: 0.7;
 }

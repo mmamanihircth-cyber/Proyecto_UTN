@@ -8,6 +8,10 @@ import SettingsSection from '../SettingsSection/SettingsSection';
 import ContactScreen from '../ContactScreen/ContactScreen';
 import { SidebearLeft } from '../../Components/SidebearLeft/SidebearLeft';
 import { useState, useEffect } from 'react';
+import AddContact from '../AddContact/AddContact';
+import AddContactSection from '../AddContactSection/AddContactSection';
+import GroupsSidebear from '../Groups/Groups';
+import GroupsSection from '../GroupsSection/GroupsSection';
 
 export default function HomeScreen() {
   const location = useLocation();
@@ -28,8 +32,10 @@ export default function HomeScreen() {
       {(!isMobile || !isChatting) && (
         <div className={isMobile ? 'show-on-mobile' : 'sidebar-desktop'}> 
           <Routes>
+            <Route path='/Groups/*' element ={<GroupsSidebear/>}/>
             <Route path='*' element={<ContactSidebear />} />
             <Route path='/Settings' element={<Settings />} />
+            <Route path='/Addcontact' element={<AddContact />}/>
           </Routes>
         </div>
       )}
@@ -38,9 +44,12 @@ export default function HomeScreen() {
 
       <section className={(isMobile && isChatting) ? 'section-mobile-show' : 'section'}>
         <Routes>
+          <Route path='/groups/contact/:contact_id' element={<ContactScreen />} />
           <Route path='/contact/:contact_id' element={<ContactScreen />} />
           <Route path="/Settings" element={<SettingsSection />} />
           <Route path="/" element={<HomeScreenSection />} />
+          <Route path='/Addcontact' element={<AddContactSection />}/>
+          <Route path='/Groups' element={<GroupsSection/>}/>
         </Routes>
       </section>
     </div>

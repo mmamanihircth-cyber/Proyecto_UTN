@@ -7,22 +7,18 @@ export default function LoginForm() {
     const [formData, setFormData] = useState({ nombre: '', apellido: '', password: '' });
     const navigate = useNavigate();
     
-    // Traemos setUsuario del contexto
     const { setUsuario } = useContext(ContactsContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         
-        // 1. Guardamos los datos en el Contexto Global
         setUsuario({ 
             nombre: formData.nombre, 
             apellido: formData.apellido 
         });
 
-        // 2. Opcional: Verificamos en consola
         console.log("Usuario guardado:", formData.nombre);
 
-        // 3. Navegamos al Home
         navigate('/'); 
     };
 
@@ -35,7 +31,6 @@ export default function LoginForm() {
                     type="text" 
                     placeholder="Nombre" 
                     required 
-                    // Actualizamos el estado del objeto formData
                     onChange={(e) => setFormData({...formData, nombre: e.target.value})}
                 />
                 <input 

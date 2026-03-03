@@ -1,0 +1,17 @@
+.group_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 35%;
+    padding: 24px;
+    justify-content: center;
+    align-content: center;
+}
+.group_section span{
+    font-size: 100px;
+}
+.h2_group{
+    font-size: 40px;
+    text-align: center;
+}

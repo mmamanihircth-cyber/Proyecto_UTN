@@ -13,7 +13,7 @@ const NewMessageForm = ({contact_id}) => {
         const new_message = event.target.nuevo_mensaje.value
         addNewMessage(contact_id, new_message)
 
-        event.target.reset()/* recet */
+        event.target.reset()
         setText(false)
     }
 

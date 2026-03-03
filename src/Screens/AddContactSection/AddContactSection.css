@@ -1,0 +1,28 @@
+.add_contact_section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50%;
+    width: 35%;
+    padding: 24px;
+    justify-content: center;
+    align-content: center;
+}
+.add_contact_section span{
+    font-size: 100px;
+}
+.h2_add_contact{
+    font-size: 40px;
+    text-align: center;
+}
+textarea{
+    background-color: transparent;
+    border: none;
+    resize: none;
+    outline: none;
+    width: 95%;
+    border-bottom: 2px solid gray;
+    color: gray;
+    height: 22px;
+    font-size: 15px;
+}

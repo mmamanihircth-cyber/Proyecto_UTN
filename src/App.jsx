@@ -19,23 +19,16 @@ function App() {
         </div>
     )
 }
-
-// Creamos un pequeño componente interno para poder usar el Contexto
 function AppContent() {
     const { usuario } = useContext(ContactsContext);
-
-    // Consideramos "logueado" si el nombre NO es el de defecto 'Tomioka'
     const estaLogueado = usuario.nombre !== 'Tomioka';
 
     return (
         <Routes>
-            {/* 1. Si NO está logueado y entra a cualquier ruta, lo mandamos al Login */}
             {!estaLogueado && <Route path="*" element={<Login />} />}
 
-            {/* 2. Si YA está logueado, habilitamos el HomeScreen en la raíz */}
             {estaLogueado && <Route path="/*" element={<HomeScreen />} />}
             
-            {/* 3. Ruta explícita para el login por seguridad */}
             <Route path="/login" element={<Login />} />
         </Routes>
     );

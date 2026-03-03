@@ -262,6 +262,32 @@ const contacts =[
                 is_read : false,
             }
         ]
-    }
+    },
+    {
+    id: 100, 
+    name: "Pilares",
+    isGroup: true,
+    last_time_connection: "Grupo",
+    profile_picture: "https://es.web.img3.acsta.net/img/1c/d5/1cd518f1990f3b7cf9ca3439d4cf2f88.jpg", 
+    messages: [
+        {
+            id: 4,
+            text: "Bienvenidos al grupo de los Pilares.",
+            send_by_me: false,
+            author: "Gyomei",
+            author_img:"https://i.pinimg.com/736x/c4/66/7d/c4667d29009c8cc8487327281373eba8.jpg",
+            created_at: "2024-06-01T10:00:00Z",
+            is_read: true,
+        },
+        {
+            id: 2,
+            text: "¡Hagamos nuestro mejor esfuerzo!",
+            send_by_me: true, 
+            created_at: "2024-06-01T10:05:00Z",
+            is_read: true,
+        }
+    ],
+    integrantes: [2, 4, 5, 6, 7, 8] 
+}
 ]
 export default contacts

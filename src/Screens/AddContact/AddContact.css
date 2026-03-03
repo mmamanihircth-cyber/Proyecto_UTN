@@ -1,0 +1,33 @@
+.container_add_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+.container_info_add_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.name_add_contact{
+    display: flex;
+    flex-direction: row;
+}
+.icon_add_contact{
+    width: 40px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_number_contact{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.area_add_contact{
+    width: 80px
+}
+.p_add_contact{
+    font-size: 12px;
+}

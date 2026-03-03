@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #161717; /* El color oscuro de WP */
+    background-color: #161717; 
 }
 .login-container img{
     width: 300px;

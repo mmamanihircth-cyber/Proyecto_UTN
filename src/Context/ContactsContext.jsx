@@ -37,8 +37,8 @@ const ContactsContextProvider = ({ children }) => {
     }
     const provider_values = {
         contacts: contactsState,
-        usuario,      // Pasamos el estado del usuario
-        setUsuario,   // Pasamos la función para cambiarlo desde el Login
+        usuario,      
+        setUsuario,   
         addNewMessage
     }
     return (
@@ -46,5 +46,6 @@ const ContactsContextProvider = ({ children }) => {
             {children}
         </ContactsContext.Provider>
     )
+
 }
 export default ContactsContextProvider

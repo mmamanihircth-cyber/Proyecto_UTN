@@ -20,6 +20,14 @@ return (
                 location.pathname.startsWith("/contact")) && (
         <div className='contacts_sidebear_container'>
             {
+                contacts
+                .filter(c => !c.isGroup) 
+                .map((contact) => (
+                <Link to={`/contact/${contact.id}`} key={contact.id}>
+                </Link>
+            ))
+            }
+            {
                 contacts.map(
                     (contact) =>{
                         return(
