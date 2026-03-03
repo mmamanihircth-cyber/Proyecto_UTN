@@ -6,19 +6,13 @@ import { ContactsContext } from '../../Context/ContactsContext';
 export default function LoginForm() {
     const [formData, setFormData] = useState({ nombre: '', apellido: '', password: '' });
     const navigate = useNavigate();
-    
     const { setUsuario } = useContext(ContactsContext);
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        
         setUsuario({ 
             nombre: formData.nombre, 
             apellido: formData.apellido 
         });
-
-        console.log("Usuario guardado:", formData.nombre);
-
         navigate('/'); 
     };
 

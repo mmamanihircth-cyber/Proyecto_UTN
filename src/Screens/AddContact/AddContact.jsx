@@ -18,7 +18,6 @@ export default function AddContact(){
                     name="nuevo_apellido"
                     /></div>
                 <div className="container_number_contact"><span className="icon_add_contact"><FaPhone /></span>
-                    
                         <div className="area_add_contact">
                             <p className="p_add_contact">Pais</p>
                             <textarea 
@@ -36,7 +35,6 @@ export default function AddContact(){
                             name="number_contact"
                             />
                         </div>
-                    
                 </div>
             </div>
         </div>

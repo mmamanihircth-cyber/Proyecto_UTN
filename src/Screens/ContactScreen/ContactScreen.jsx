@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import ContactSidebear from '../../Components/ContactSidebear/ContactSidebear'
 import { useParams } from 'react-router'
 import { ContactsContext } from '../../Context/ContactsContext'
 import "./ContactScreen.css"
@@ -41,21 +40,12 @@ return (
                     <button><CiMenuKebab /></button>
                 </div>
             </div>
-        
         <div className='interaction_chat'>
             <Messages contact_selected={contact_selected} />
             <NewMessageForm contact_id={contact_id} />
         </div>
-        
         </div>
     }
     </div>
 )
 }
-/* 
-    import { IoVideocam } from "react-icons/io5";
-    <IoVideocam />
-
-    import { IoCallOutline } from "react-icons/io5";
-    <IoCallOutline />
-*/

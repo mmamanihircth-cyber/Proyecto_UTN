@@ -22,13 +22,10 @@ export default function HomeScreen() {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
   const isChatting = location.pathname.includes("/contact/") && location.pathname !== "/contact";
-
   return (
     <div className='homescreen'>
       {(!isMobile || !isChatting) && <SidebearLeft />}
-
       {(!isMobile || !isChatting) && (
         <div className={isMobile ? 'show-on-mobile' : 'sidebar-desktop'}> 
           <Routes>
@@ -39,9 +36,7 @@ export default function HomeScreen() {
           </Routes>
         </div>
       )}
-
       <hr className='hr' />
-
       <section className={(isMobile && isChatting) ? 'section-mobile-show' : 'section'}>
         <Routes>
           <Route path='/groups/contact/:contact_id' element={<ContactScreen />} />
